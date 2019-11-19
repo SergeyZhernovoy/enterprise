@@ -66,7 +66,14 @@ public class Main {
         System.out.println(filterReduce.collect());
         JavaPairRDD<String, Iterable<String>> groupByKey = mapToPairTuple.groupByKey();
         System.out.println(groupByKey.collect());
-
+        //lesson 5 чтение и запись файлов
+        JavaPairRDD<String, String> wholeTextFile = sc.wholeTextFiles("spark_hello/src/main/resources/issues.txt");
+        System.out.println(stringJavaRDD.collect());
+        System.out.println(wholeTextFile.collect());
+        //save
+        stringJavaRDD.saveAsObjectFile("spark_hello/src/main/resources/issues2");
+        JavaRDD<Object> objectJavaRDD = sc.objectFile("spark_hello/src/main/resources/issues2");
+        System.out.println(objectJavaRDD.collect());
 
     }
 }

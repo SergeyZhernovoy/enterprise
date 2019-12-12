@@ -1,0 +1,6 @@
+Add-Exports: java.base/jdk.internal.misc=ALL-UNNAMED
+Add-Exports: java.base/sun.nio.ch=ALL-UNNAMED
+Add-Exports: java.management/com.sun.jmx.mbeanserver=ALL-UNNAMED
+Add-Exports: jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED
+Add-Exports: java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED
+Illegal-Access: permit

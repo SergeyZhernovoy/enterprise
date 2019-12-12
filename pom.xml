@@ -4,22 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>bigdata</groupId>
-    <artifactId>big-data</artifactId>
+    <groupId>ru.education.enterprise</groupId>
+    <artifactId>enterprise</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1</version>
     <modules>
-        <module>spark_hello</module>
+        <module>spark</module>
+        <module>batch</module>
+        <module>ignite</module>
+        <module>liquibase</module>
+        <module>mybatis</module>
+        <module>hibernate</module>
+        <module>ejb</module>
+        <module>spring</module>
     </modules>
-
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.12</artifactId>
-            <version>2.4.2</version>
-        </dependency>
-
-    </dependencies>
-
 </project>

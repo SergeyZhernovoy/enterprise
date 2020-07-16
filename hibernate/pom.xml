@@ -19,6 +19,12 @@
             <artifactId>hibernate-entitymanager</artifactId>
             <version>5.4.9.Final</version>
         </dependency>
+        <!-- H2 rocks for small-scale deployment -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+        </dependency>
     </dependencies>
 
 </project>
